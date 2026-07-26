@@ -1,116 +1,31 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#FFF7D6,#FFE8EF,#FFF3B0);
-    overflow-x:hidden;
-    position:relative;
-    min-height:100vh;
-}
-
-/* Girassóis e Gérberas */
-body::before{
-    content:"🌻 🌼 🌻 🌼 🌻 🌼 🌻 🌼 🌻 🌼";
-    position:fixed;
-    inset:0;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-evenly;
-    align-content:space-evenly;
-    font-size:90px;
-    opacity:.08;
-    z-index:-2;
-    pointer-events:none;
-}
-
-/* Corações Flutuando */
-.hearts{
-    position:fixed;
-    inset:0;
-    overflow:hidden;
-    pointer-events:none;
-    z-index:-1;
-}
-
-.heart{
-    position:absolute;
-    bottom:-60px;
-    font-size:30px;
-    animation:float linear infinite;
-    opacity:.8;
-}
-
-.heart:nth-child(1){left:5%;animation-duration:12s;}
-.heart:nth-child(2){left:15%;animation-duration:15s;font-size:25px;}
-.heart:nth-child(3){left:28%;animation-duration:18s;}
-.heart:nth-child(4){left:40%;animation-duration:13s;font-size:35px;}
-.heart:nth-child(5){left:52%;animation-duration:17s;}
-.heart:nth-child(6){left:65%;animation-duration:14s;font-size:22px;}
-.heart:nth-child(7){left:77%;animation-duration:19s;}
-.heart:nth-child(8){left:90%;animation-duration:16s;font-size:28px;}
-
-@keyframes float{
-    0%{
-        transform:translateY(0) scale(.7);
-        opacity:0;
-    }
-    15%{
-        opacity:1;
-    }
-    100%{
-        transform:translateY(-120vh) rotate(360deg) scale(1.3);
-        opacity:0;
-    }
-}
-
-.card{
-    width:90%;
-    max-width:850px;
-    margin:40px auto;
-    background:rgba(255,255,255,.88);
-    backdrop-filter:blur(12px);
-    border-radius:25px;
-    padding:35px;
-    box-shadow:0 15px 35px rgba(0,0,0,.2);
-    border:3px solid #FFD54F;
-    animation:fade 1.5s ease;
-}
-
-@keyframes fade{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
 h2{
+    font-size:48px;
+    font-weight:700;
     text-align:center;
-    color:#E91E63;
-    margin-bottom:20px;
-}
 
-p{
-    color:#444;
-}
+    background-image:
+    url("https://images.unsplash.com/photo-1470509037663-253afd7f0f51?w=1200");
+    background-size:cover;
+    background-position:center;
 
-iframe{
-    margin-top:20px;
-    border:none;
-    border-radius:15px;
-}
-</style>
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
 
+    text-shadow:0 2px 8px rgba(0,0,0,.15);
+}p{
+    font-size:22px;
+    line-height:1.9;
+
+    background-image:
+    url("https://images.unsplash.com/photo-1470509037663-253afd7f0f51?w=1200");
+    background-size:cover;
+    background-position:center;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
 <div class="hearts">
     <div class="heart">❤️</div>
     <div class="heart">💛</div>
